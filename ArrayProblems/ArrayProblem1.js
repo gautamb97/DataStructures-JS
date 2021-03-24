@@ -5,3 +5,18 @@ for(let dieRoll = 0; dieRoll < 10; dieRoll++){
     random.push(randomValue);
 }
 console.log("The ten random values are : "+random);
+
+//finding second largest number from the array without sorting
+let largestNumber = random[0];
+let secondLargestNumber = random[0];
+
+for (let i = 0; i < random.length; i++){
+    if (random[i] > largestNumber){
+        secondLargestNumber = largestNumber;
+        largestNumber = random[i];
+    } else if (random[i] > secondLargestNumber){
+        secondLargestNumber = random[i];
+    }
+}
+
+console.log("The second largest number is : "+secondLargestNumber);
