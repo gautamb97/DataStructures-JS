@@ -35,3 +35,12 @@ for (let i = 0; i < random.length; i++){
 }
 
 console.log("The second smallest number is : "+secondSmallestNumber);
+
+//finding second largest number using sort
+const tempArray = [...random];
+const secondLargestNum = tempArray.sort()[tempArray.length - 2];
+console.log("The second largest number using sort : "+secondLargestNum);
+
+//finding second smallest number using sort
+const secondSmallestNum = tempArray.sort()[tempArray.length - 9];
+console.log("The second smallest number using sort : "+secondSmallestNum);
